@@ -26,7 +26,6 @@ def source_to_destination(source_name, source_id, destination_name) -> int:
 
     return source_id
 
-# read stdin to `field` with a padding of dots around the input
 for line in fileinput.input():
 
     # should be first line, get seed ids
