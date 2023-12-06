@@ -4,10 +4,10 @@ total_score <- 0
 
 f <- file("stdin")
 open(f)
-while(length(line <- readLines(f,n=1)) > 0) {
+while (length(line <- readLines(f, n = 1)) > 0) {
   left <- gsub(".*: (.*) \\|.*", "\\1", line)
   right <- gsub(".*\\| (.*)", "\\1", line)
-  
+
   left_values <- strsplit(left, split = " ") |> unlist()
   right_values <- strsplit(right, split = " ") |> unlist()
 
