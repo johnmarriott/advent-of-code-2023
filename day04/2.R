@@ -5,7 +5,7 @@ card_matches <- c()
 
 f <- file("stdin")
 open(f)
-while(length(line <- readLines(f,n=1)) > 0) {
+while (length(line <- readLines(f ,n = 1)) > 0) {
   left <- gsub(".*: (.*) \\|.*", "\\1", line)
   right <- gsub(".*\\| (.*)", "\\1", line)
   
