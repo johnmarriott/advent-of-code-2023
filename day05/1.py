@@ -51,7 +51,7 @@ for line in fileinput.input():
 
         mappings[f"{source}-to-{destination}"].append(mapping)
 
-source_name = "seed"
+source_name = item_names[0]
 for destination_name in item_names[1:]:
     destination_ids = []
     for source_id in item_ids[source_name]:
