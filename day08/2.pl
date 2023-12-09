@@ -45,4 +45,9 @@ foreach $starting_node (@starting_nodes) {
 }
 
 $starting_node_steps = join(", ", @node_steps);
+
+# the LCM is only a solution because of the given data.  If there were a case
+# like path 1 can go from A to Z in 5 steps and Z to Z in 2 steps and path
+# 2 can go from A to Z in 7 steps, then the answer is 7 but the LCM of A to Z
+# steps is 35
 system("python -c 'import math; print(math.lcm($starting_node_steps))'")
