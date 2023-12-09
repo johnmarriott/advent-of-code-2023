@@ -34,7 +34,6 @@ def previous_value_of_sequence(sequence):
     # recursive case 
     return sequence[0] - previous_value_of_sequence(differences)
 
-# read stdin to `field` with a padding of dots around the input
 next_values = []
 previous_values = []
 for line in fileinput.input():
