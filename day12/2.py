@@ -12,19 +12,15 @@ so brute force of trying each ? as #/. is prohibitive
 line one of this turns into (49 choose 30) ~ 10^13 combinations
 so we can't brute force that way either
 
-can we try slotting them in from left to right?
+instead try slotting them in from left to right
 - find out min space that the remaining ones need = n_digits + sum(digits)
   this is if they were all neighbors with one dot between
 - left to right, where can the current digit go?
     - need n digits of ? and #
     - next spot needs to be ? or .
     - if it fits then take the substring after n+1 digits (first n + the ?|. after)
-    - try to be smart by trimming dots from it + using memoization?
-      i.e. if you look at ".##." and "##."
-       -- memoization is probably the best speedup?
-    - recurse on that
 
-maybe look at it the other way around, for this string what are the possible numbers? 
+do this plus memoization on previously-seen maps + lengths
 """
 
 spring_map_counts_seen = {}
