@@ -1,5 +1,7 @@
 #!/bin/zsh
 
+# assume running from in a year directory
+
 if [[ $# == 0 ]] 
 then
   day=$( date +%d )
