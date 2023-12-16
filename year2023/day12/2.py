@@ -9,7 +9,7 @@ MULTIPLICATION_FACTOR = 5
 in the given input there are at most 17 ? on one line
 so brute force of trying each ? as #/. is prohibitive
 
-line one of this turns into (49 choose 30) ~ 10^13 combinations
+part one of this turns into (49 choose 30) ~ 10^13 combinations
 so we can't brute force that way either
 
 instead try slotting them in from left to right
@@ -96,4 +96,3 @@ for line in fileinput.input():
     print(f"{springs_multiplied} {counts_multiplied} -> {n_valid_combinations}")
 
 print(sum(valid_combinations))
-
