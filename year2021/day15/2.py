@@ -78,7 +78,7 @@ end_vertex_key = f"{len(matrix) - 1},{len(matrix[0]) - 1}"
 # but you do have to do extra bookkeeping
 unvisited_vertex_distance_from_start_vertex = { key: math.inf for key in graph.keys() }
 vertex_distance_from_start_vertex = { key: math.inf for key in graph.keys() }
-vertex_predescessor_key_from_start_vertex = { key: None for key in graph.keys() }
+vertex_predecessor_key_from_start_vertex = { key: None for key in graph.keys() }
 
 unvisited_vertex_distance_from_start_vertex[start_vertex_key] = 0
 vertex_distance_from_start_vertex[start_vertex_key] = 0
@@ -100,6 +100,6 @@ while len(unvisited_vertex_distance_from_start_vertex) > 0:
         if distance_from_start_to_neighbor < vertex_distance_from_start_vertex[neighbor_key]:
             unvisited_vertex_distance_from_start_vertex[neighbor_key] = distance_from_start_to_neighbor
             vertex_distance_from_start_vertex[neighbor_key] = distance_from_start_to_neighbor
-            vertex_predescessor_key_from_start_vertex[neighbor_key] = current_vertex_key
+            vertex_predecessor_key_from_start_vertex[neighbor_key] = current_vertex_key
 
 print(vertex_distance_from_start_vertex[end_vertex_key])
