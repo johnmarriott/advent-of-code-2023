@@ -20,7 +20,6 @@ matrix = [[int(x) for x in line.strip()] for line in fileinput.input()]
 # values are vertices
 graph: dict[str, Vertex] = {}
 
-# we end up adding vertices that don't exist since the edge padding is added here
 for i in range(len(matrix)):
     for j in range(len(matrix[0])):
         key = f"{i},{j}"
