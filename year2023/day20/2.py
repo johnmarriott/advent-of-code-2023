@@ -18,7 +18,7 @@ send a high pulse.  If this sequence is periodic for each of these four
 separately, then we can see when all four line up.  Look for:
 - at least two values for each of these
 - the second value found for each node to be a multiple of the first
-  - if so, the least common multiple of the four first values is the solution
+  - if so, the least common multiple of the four first values is probably the solution
   - if not, another approach is needed.  Not needed, it turns out that for the 
     given this way works :)
 
