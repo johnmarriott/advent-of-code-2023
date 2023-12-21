@@ -1,6 +1,10 @@
 #!/usr/bin/env python
 
 """
+This solution is customized to my input.  Could replace the lines around
+    nodes_going_to_lg = ["ls", "nb", "vc", "vg"]
+with a lookup in the network of which nodes go the the predecessor of rx
+
 rx comes from &lg
 
 Running pulses for a while to wait for lg to send a low didn't work.
